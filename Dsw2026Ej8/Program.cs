@@ -11,6 +11,7 @@ namespace Dsw2026Ej8
             ProbarProblema1();
             ProbarProblema2();
             ProbarProblema3();
+            ProbarProblema4();
             
         }
 
@@ -34,6 +35,13 @@ namespace Dsw2026Ej8
             var prueba3 = new Problema3.Problema3();
             Product productoPrueba = new Product("Producto C");
             Console.WriteLine(prueba3.CompararCopias(30, productoPrueba));
+        }
+
+        static void ProbarProblema4()
+        {
+            Console.WriteLine("\n === PROBLEMA 4 === ");
+            var prueba4 = new Problema4.Problema4();
+            Console.WriteLine($"El promedio es: {prueba4.CalcularPromedio(9, null, 8)}");
         }
     }
 }
