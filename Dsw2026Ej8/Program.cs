@@ -14,7 +14,7 @@ namespace Dsw2026Ej8
             ProbarProblema3();
             ProbarProblema4();
             ProbarProblema5();
-            
+            ProbarProblema6();
         }
 
         static void ProbarProblema1()
@@ -55,6 +55,17 @@ namespace Dsw2026Ej8
 
             Console.WriteLine($"Demostracion Ratail: {prueba5.ObtenerImporteFinal(salePrueba1)}");
             Console.WriteLine($"Demostracion Wholesale: {prueba5.ObtenerImporteFinal(salePrueba2)}");
+        }
+
+        static void ProbarProblema6()
+        {
+            Console.WriteLine("\n === PROBLEMA 6 === ");
+            var prueba6 = new Problema6.Problema6();
+            string codePrueba1 = " abc 123 x ";
+            string? codeNulo = null;
+
+            Console.WriteLine(prueba6.NormalizarCodigoProducto(codePrueba1));
+            Console.WriteLine(prueba6.NormalizarCodigoProducto(codeNulo));
         }
     }
 }
