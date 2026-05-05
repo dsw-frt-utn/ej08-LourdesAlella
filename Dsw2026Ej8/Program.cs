@@ -1,6 +1,7 @@
 ﻿using Dsw2026Ej8.Problema1;
 using Dsw2026Ej8.Problema2;
 using Dsw2026Ej8.Problema3;
+using Dsw2026Ej8.Problema5;
 
 namespace Dsw2026Ej8
 {
@@ -12,6 +13,7 @@ namespace Dsw2026Ej8
             ProbarProblema2();
             ProbarProblema3();
             ProbarProblema4();
+            ProbarProblema5();
             
         }
 
@@ -42,6 +44,17 @@ namespace Dsw2026Ej8
             Console.WriteLine("\n === PROBLEMA 4 === ");
             var prueba4 = new Problema4.Problema4();
             Console.WriteLine($"El promedio es: {prueba4.CalcularPromedio(9, null, 8)}");
+        }
+
+        static void ProbarProblema5()
+        {
+            Console.WriteLine("\n === PROBLEMA 5 === ");
+            var prueba5 = new Problema5.Problema5();
+            Sale salePrueba1 = new RetailSale(50.5m);
+            Sale salePrueba2 = new WholesaleSale(1000m);
+
+            Console.WriteLine($"Demostracion Ratail: {prueba5.ObtenerImporteFinal(salePrueba1)}");
+            Console.WriteLine($"Demostracion Wholesale: {prueba5.ObtenerImporteFinal(salePrueba2)}");
         }
     }
 }
